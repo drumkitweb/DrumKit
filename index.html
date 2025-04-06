@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drum Kit</title>
+</head>
+
+<body>
+    <nav class="sidebar-nav">
+        <ul>
+            <li>
+                <a class="one" href="index.html">1</a>
+                <div class="nav-light nav-light-on"></div>
+            </li>
+            <li>
+                <a class="two" href="index1.html">2</a>
+                <div class="nav-light nav-light-off"></div>
+            </li>
+            <li>
+                <a class="three" href="index2.html">3</a>
+                <div class="nav-light nav-light-off"></div>
+            </li>
+            <li>
+                <a class="four" href="index3.html">4</a>
+                <div class="nav-light nav-light-off"></div>
+            </li>
+        </ul>
+    </nav>
+    <section class="drum-kit">
+        <div class="kick-main all-pad">
+            <div class="drum-pad kick-pad" data-key="86">
+                <img src="assets/kick.png">
+            </div>
+            <div class="drum-pad kick-pad" data-key="86">
+                <img src="assets/kick.png">
+            </div>
+        </div>
+        <div class="snare-main all-pad">
+            <div class="drum-pad snare-pad" data-key="70">
+                <img src="assets/snare.png">
+            </div>
+        </div>
+        <div class="tom-main all-pad">
+            <img class="drum-pad tom1-pad tom-pad" data-key="88" src="assets/tom.png">
+            <img class="drum-pad tom2-pad tom-pad" data-key="83" src="assets/tom.png">
+            <img class="drum-pad tom3-pad tom-pad" data-key="83" src="assets/tom.png">
+        </div>
+        <div class="cymbal-large">
+            <img class="drum-pad rightl-cymbal all-pad" data-key="69" src="assets/crash.png">
+            <img class="drum-pad leftl-cymbal all-pad" data-key="67" src="assets/crash.png">
+        </div>
+        <div class="floor-pad">
+            <img class="drum-pad floor-pad-img all-pad" data-key="68" src="assets/floor.png">
+            <img class="drum-pad floor-pad-img all-pad" data-key="68" src="assets/floor.png">
+        </div>
+        <div class="cymbal-small">
+            <img class="drum-pad rights-cymbal all-pad" data-key="90" src="assets/crash.png">
+            <img class="drum-pad lefts-cymbal all-pad" data-key="90" src="assets/crash.png">
+        </div>
+        <div class="cymbal-smallest">
+            <img class="drum-pad rightst-cymbal all-pad" data-key="90" src="assets/crash.png">
+            <img class="drum-pad leftst-cymbal all-pad" data-key="90" src="assets/crash.png">
+        </div>
+    </section>
+
+    <audio data-key="68" src="sound1/tom.wav"></audio>
+    <audio data-key="83" src="sound1/crash.wav"></audio>
+    <audio data-key="86" src="sound1/kick.wav"></audio>
+    <audio data-key="70" src="sound1/snare.wav"></audio>
+    <audio data-key="67" src="sound1/chat.wav"></audio>
+    <audio data-key="65" src="sound1/clap.wav"></audio>
+    <audio data-key="88" src="sound1/rim.wav"></audio>
+    <audio data-key="90" src="sound1/ohat.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
